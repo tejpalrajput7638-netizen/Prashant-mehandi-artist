@@ -344,3 +344,16 @@ footer p{
 #topBtn:hover{
     transform:scale(1.1);
   }
+.contact{
+    background: linear-gradient(135deg,#2b1055,#6a11cb,#2575fc);
+    color: #ffffff;
+}
+
+.contact p,
+.contact a{
+    color: #ffffff;
+}
+
+.contact h2{
+    color: #ffd700;
+}
