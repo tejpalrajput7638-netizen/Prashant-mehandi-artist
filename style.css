@@ -279,6 +279,16 @@ footer p{
 .gallery-grid img:hover{
     transform:scale(1.06);
     border-color:#ffffff;
+}.about{
+    background: linear-gradient(135deg, #2b1055, #7597de);
+}
+
+.gallery{
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+.contact{
+    background: linear-gradient(135deg, #3a1c71, #d76d77, #ffaf7b);
 }
 
 /* SERVICES */
