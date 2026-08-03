@@ -10,10 +10,13 @@ scroll-behavior:smooth;
 }
 
 body{
-font-family:Arial,sans-serif;
-background:#0f0f0f;
-color:#fff;
-line-height:1.6;
+body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    color:#fff;
+    background: linear-gradient(135deg,#0f3d2e,#1b5e20,#3e2723);
+    background-attachment: fixed;
+}
 }
 
 /* ===== HERO ===== */
