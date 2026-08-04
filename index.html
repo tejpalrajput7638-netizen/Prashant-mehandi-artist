@@ -28,11 +28,7 @@ const observer = new IntersectionObserver((entries)=>{
         if(entry.isIntersecting){
             entry.target.classList.add("show");
         }
-    });
-},{threshold:0.2});
-
-photos.forEach(img=>observer.observe(img));
-  </script>
+    
 <body>
 
 <header class="hero">
