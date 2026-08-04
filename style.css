@@ -379,3 +379,55 @@ footer p{
     transform:perspective(1000px) rotateY(-20deg) translateX(-100px);
 }
 
+/* ===========================
+   PREMIUM 3D GALLERY
+=========================== */
+
+.gallery{
+    padding:80px 20px;
+    background:linear-gradient(135deg,#111,#1a1a1a,#000);
+}
+
+.gallery h2{
+    text-align:center;
+    font-size:42px;
+    color:#FFD700;
+    margin-bottom:40px;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+    perspective:1200px;
+}
+
+.gallery-grid img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+    border-radius:20px;
+    border:3px solid #FFD700;
+    box-shadow:0 20px 40px rgba(0,0,0,.45);
+    transition:all .6s ease;
+    transform:rotateY(-12deg) rotateX(5deg) scale(1);
+}
+
+.gallery-grid img:nth-child(even){
+    transform:rotateY(12deg) rotateX(5deg) scale(1);
+}
+
+.gallery-grid img:hover{
+    transform:rotateY(0deg) rotateX(0deg) scale(1.08);
+    box-shadow:0 30px 60px rgba(255,215,0,.5);
+    border-color:#fff;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.gallery-grid{
+    grid-template-columns:1fr;
+}
+
