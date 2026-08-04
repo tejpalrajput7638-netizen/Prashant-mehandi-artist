@@ -14,7 +14,25 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 </head>
+<script>
+const photos = document.querySelectorAll(".gallery img");
 
+photos.forEach((img,index)=>{
+    if(index%2==0){
+        img.classList.add("left");
+    }
+});
+
+const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+    });
+},{threshold:0.2});
+
+photos.forEach(img=>observer.observe(img));
+  </script>
 <body>
 
 <header class="hero">
