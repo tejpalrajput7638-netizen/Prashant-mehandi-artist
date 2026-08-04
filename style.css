@@ -357,3 +357,34 @@ footer p{
 .contact h2{
     color: #ffd700;
 }
+/* ===== Premium 3D Gallery ===== */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+    padding:20px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:18px;
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+    opacity:0;
+    transform:perspective(1000px) rotateY(20deg) translateX(100px);
+    transition:all .9s ease;
+}
+
+.gallery img.left{
+    transform:perspective(1000px) rotateY(-20deg) translateX(-100px);
+}
+
+.gallery img.show{
+    opacity:1;
+    transform:perspective(1000px) rotateY(0deg) translateX(0);
+}
+
+.gallery img:hover{
+    transform:perspective(1000px) scale(1.08) rotateY(8deg);
+    box-shadow:0 25px 45px rgba(255,215,0,.45);
+}
